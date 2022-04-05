@@ -1,5 +1,6 @@
 body{
     background-color: rgb(0, 8, 29);
+    overflow-x: hidden;
 }
 
 .bg-navbar{
