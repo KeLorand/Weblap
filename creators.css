@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(15, 15, 15);
+    overflow-x: hidden;
+}
+
+.bg-navbar{
+    background-color: rgba(255, 255, 255, 0.041);
+
+}
+
+.bg-mainL{
+    background-color: rgb(44, 44, 44);
+}
+
+a{
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+.vph{
+    margin-top: 25%;
+}
+
+h2 {
+    color: white;
+}
