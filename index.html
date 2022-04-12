@@ -11,46 +11,94 @@
     <title>Főoldal</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-sm bg-navbar justify-content-center">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <h5 class="text-white">Üdvözlünk a Weboldalon</a>
-            </li>
-        </ul>
-        <div class="dropdown ms-auto bg-mainL" style="margin-right: 50px;">
-            <button type="button" class="btn btn-primary dropdown-toggle bg-mainL" data-bs-toggle="dropdown">
-                Menü
-            </button>
-            <ul class="dropdown-menu bg-mainL">
-                <li><a class="dropdown-item text-white" href="jatekmenet.html">Játékmenet</a></li>
-                <li><a class="dropdown-item text-white" href="hirek.html">Hírek</a></li>
-                <li><a class="dropdown-item text-white" href="creators.html">Készítők</a></li>
-                <li><i onclick="goToGithub()" class="fa fa-github" style="font-size:36px;color:white;margin-left: 25%;"></i></li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-        </video>
-        <div class="container h-100">
-          <div class="d-flex h-100 text-center align-items-center">
-            <div class="w-100 text-white">
-              <h1 class="display-3">Üdvözlünk a weboldalon!</h1>
-              <p class="lead mb-0">Fejlesztés alatt..</p>
+    <div style="position: fixed !important; z-index: 100; width: 100%;">
+        <nav class="navbar navbar-inverse" style="z-index: 100;background-color: black;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#section1">Főoldal</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#section2">Készítők</a></li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </header>
+        </nav>
+    </div>
+    <div id="section1" class="container-fluid">
 
+        <div class="container h-100" style="position: absolute; margin-left: 5%;">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">Üdvözlünk a weboldalon!</h1>
+                    <p class="lead mb-0">Fejlesztés alatt..</p>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"
+            style="height: 100%; width: 100%; right: 0; bottom: 0;">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="section2" class="container-fluid" style="margin-top: 500px;">
+        <h1 style="text-align: center;">Készítők</h1>
+        <div class="row container-sm" style="margin-left: 14%;text-align: center;">
+            <div class="card" style="width:270px;background-color: rgb(15, 15, 15);color: white;">
+                <p class="btext" id="btext"
+                    style="position: absolute; margin-top: 50%;margin-left: 5%; max-width: 200px;z-index: 200 !important;">
+                    A vadorzó nőcsábász, 0-24 elérhető akárcsak a Mancsőrjárat. Keresd bátran, bármikor!</p>
+                <img class="blur" onmouseover="textMegjelenito()" onmouseleave="textEltunteto()" src="zsup.jpg"
+                    alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Zsuppán Flórián</h4>
+                </div>
+            </div>
+            <div class="card" style="width:270px;background-color: rgb(15, 15, 15);color: white; margin-left: 2%;">
+                <p class="btext" id="btext2"
+                    style="position: absolute; margin-top: 60%; margin-left: 20%; max-width: 200px;z-index: 200 !important;">
+                    Túl sokat Tarkovozok</p>
+                <img class="blur" onmouseover="textMegjelenito1()" onmouseleave="textEltunteto()" src="lro.jpg"
+                    alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Kele Loránd</h4>
+                </div>
+            </div>
+            <div class="card" style="width:270px;background-color: rgb(15, 15, 15);color: white; margin-left: 2%;">
+                <p class="btext" id="btext3"
+                    style="position: absolute; margin-top: 60%; margin-left: 40%; max-width: 200px;z-index: 200 !important;">
+                    robi</p>
+                <img class="blur" onmouseover="textMegjelenito2()" onmouseleave="textEltunteto()" src="geri.bmp"
+                    alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Oláh Gergő</h4>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
-        function goToGithub(){
+        function goToGithub() {
             window.open("https://github.com/KeLorand/Weblap")
+        }
+
+        function textMegjelenito() {
+            document.getElementById("btext").style.visibility = "visible";
+        }
+
+        function textMegjelenito1() {
+            document.getElementById("btext2").style.visibility = "visible";
+        }
+
+        function textMegjelenito2() {
+            document.getElementById("btext3").style.visibility = "visible";
+        }
+
+        function textEltunteto() {
+            document.getElementById("btext").style.visibility = "hidden";
+            document.getElementById("btext2").style.visibility = "hidden";
+            document.getElementById("btext3").style.visibility = "hidden";
         }
     </script>
 
