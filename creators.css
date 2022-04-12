@@ -32,3 +32,7 @@ h2 {
     transition-duration: 500ms;
     -webkit-filter: blur(4px);
 }
+
+.btext{
+    visibility: hidden;
+}
