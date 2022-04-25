@@ -42,36 +42,75 @@
             loop></video>
     </div>
 
-    <div id="section2">
-        <p class="text-aquamarine">asd</p>
+    <div class="d-box justify-content-center text-dark container-sm" id="section2"
+        style="padding-top:500px;padding-bottom:500px;">
+        <h1 class="text-aquamarine">Játékmenet</h1>
+        <div style="position: relative;">
+            <p id="imgtext1" class="imgtext">Főmenü, erről nincs sok mindent mondani, egy egyszerű főmenü.</p>
+            <img src="menu.png" alt="" style="width: 100%;" onmouseenter="textMegjelenito()" onmouseleave="textEltunteto()">  
+        </div>
+        <div style="position: relative;">
+            <p id="imgtext2" class="imgtext">A játékban 2 fegyver elérhető, itt jelenleg a pisztoly látható.</p>
+            <img src="game.png" alt="" style="width: 100%;"  onmouseenter="textMegjelenito1()" onmouseleave="textEltunteto()">
+        </div>
+        <div style="position: relative;">
+            <p id="imgtext3" class="imgtext">A játék második fegyvere a shotgun. Ennek a fegyvernek az érdekessége, hogy egy lövésre hármat lő.</p>
+            <img src="game2.png" alt="" style="width: 100%;"  onmouseenter="textMegjelenito2()" onmouseleave="textEltunteto()">
+        </div>
     </div>
 
     <div class="d-flex justify-content-center text-white container-fluid" id="section3"
         style="padding-top:500px;padding-bottom:500px;">
         <div class="row">
-            <div class="col" style="width: 400px;">
+            <h1 class="text-aquamarine">Készítők</h1>
+            <div class="col" style="width: 300px;">
                 <img class="card-img-top" src="kele.jpg" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">Kele Loránd</h4>
                     <p class="card-text">Túl sokat Tarkovozok :/.</p>
                 </div>
             </div>
-            <div class="col" style="width: 400px;">
+            <div class="col" style="width: 300px;">
                 <img class="card-img-top" src="zsuppan.jpg" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">Zsuppán Flórián</h4>
                     <p class="card-text">300 ezres laptop wifi nélkül</p>
                 </div>
             </div>
-            <div class="col" style="width: 400px;">
+            <div class="col" style="width: 300px;">
                 <img class="card-img-top" src="geri.jpg" alt="Card image">
                 <div class="card-body">
                     <h4 class="card-title">Oláh Gergő</h4>
-                    <p class="card-text">Egybe rak 3 divet azt jól van az úgy</p>
+                    <p class="card-text">Egybe rak 3 divet azt jól van az úgy, aztán csinálhatom újra éjjel 11-kor</p>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+<footer>
+    <p class="text-white">YetiFC 2022,</p>
+    <p class="text-white">Minden jog fenntartva.</p>
+</footer>
+
+<script>
+    function textMegjelenito() {
+            document.getElementById("imgtext1").style.visibility = "visible";
+        }
+
+        function textMegjelenito1() {
+            document.getElementById("imgtext2").style.visibility = "visible";
+        }
+
+        function textMegjelenito2() {
+            document.getElementById("imgtext3").style.visibility = "visible";
+        }
+
+        function textEltunteto() {
+            document.getElementById("imgtext1").style.visibility = "hidden";
+            document.getElementById("imgtext2").style.visibility = "hidden";
+            document.getElementById("imgtext3").style.visibility = "hidden";
+        }
+</script>
 
 </html>
