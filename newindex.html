@@ -38,25 +38,25 @@
     </div>
     <div id="section1" class="d-flex justify-content-center text-white"
         style="padding-top:500px;padding-bottom:500px; text-align: center;">
-        <p style="z-index: 10 !important;" style="font-size: 100%;">Üdv a Weboldalon!</p>
         <video width="300" height="204" src="video2.webm" autoplay muted loop></video>
+        <p class="textcenter" style="z-index: 10 !important;" >Üdv a Weboldalon!</p>
     </div>
 
     <div class="d-box justify-content-center text-dark container-sm" id="section2"
         style="padding-top:100px;padding-bottom:500px;">
         <h1 class="text-aquamarine" style="font-size: 100%;">Játékmenet</h1>
         <div style="position: relative;">
-            <p id="imgtext1" class="imgtext">Ez a képernyő fogad amint elindítod a játékot, a START gombbal tudod elindítani a játékot, a SETTINGS gombbal eltudsz jutni a játék beállításihoz, az EXIT gomb a játékból való kilépéshez való.</p>
+            <p id="imgtext1" class="imgtext textcenter"  onmouseenter="textMegjelenito()">Ez a képernyő fogad amint elindítod a játékot, a START gombbal tudod elindítani a játékot, a SETTINGS gombbal eltudsz jutni a játék beállításihoz, az EXIT gomb a játékból való kilépéshez való.</p>
             <img  class="blurimg" src="menu.png" alt="" style="width: 100%;" onmouseenter="textMegjelenito()" onmouseleave="textEltunteto()">  
         </div>
         <div style="position: relative;">
-            <p id="imgtext2" class="imgtext">A játékban 2 fegyver elérhető, itt jelenleg a pisztoly látható.</p>
+            <p id="imgtext2" class="imgtext textcenter"  onmouseenter="textMegjelenito1()">A játékban 2 fegyver elérhető, itt jelenleg a pisztoly látható.</p>
             <img  class="blurimg" src="game.png" alt="" style="width: 100%;"  onmouseenter="textMegjelenito1()" onmouseleave="textEltunteto()">
         </div>
         <div style="position: relative;">
-            <p id="imgtext3" class="imggtext">A játék második fegyvere a shotgun. Ennek a fegyvernek az érdekessége, hogy egy lövésre hármat lő.</p>
-            <img class="blurimg" src="game2.png" alt="" style="width: 100%;"  onmouseenter="textMegjelenito2()" onmouseleave="textEltunteto()">
-            <p class="text-white">A játék célja, hogy minél több ellenséget lelőjünk. Pontszámunkat a játék fileba írja, tehát játékadatain nem vesznek el.</p>
+            <p id="imgtext3" class="imgtext textcenter"  onmouseenter="textMegjelenito2()">A második fegyver a shotgun, ennek a fegyvernek az érdekessége az, hogy egy lövésre 3 golyó hagyja el a csövet.</p>
+            <img  class="blurimg" src="game2.png" alt="" style="width: 100%;"  onmouseenter="textMegjelenito2()" onmouseleave="textEltunteto()">
+            <p class="text-white">A játék célja, hogy minél több ellenséget lőjünk le. A játék fájéba írja az eredményünket, így az a következő indításnál is megmarad</p>
         </div>
     </div>
 
