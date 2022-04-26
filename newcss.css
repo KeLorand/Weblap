@@ -83,3 +83,13 @@ a, h1{
     margin-top: 13%;
     margin-left: -5%;
 }
+
+.imgggtext{
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    left: 25% !important;
+    top: 25% !important;
+    margin-top: 13%;
+    margin-left: -20%;
+}
